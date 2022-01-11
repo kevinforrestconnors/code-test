@@ -15,7 +15,7 @@ So I would like to see you work with:
 - React
 - Redux
 - Fetch API
-- Typescript
+- TypeScript
 
 I do not want to use too much of your time. Please stop if you feel like this test has taken too long. I designed this test to be relatively quick to do for a senior developer. Partly because you do not need to worry about cross-browser support or the visual appeal of the website. I have also added examples and included various libraries to help speed things up.
 
@@ -34,7 +34,7 @@ Thank you for giving this test a try, I am open to hear your feedback on it. If 
 
 1. **Authenticate**
 
-   Use the Fetch API to make a `POST` request to `http://localhost:808/authenticate` to receive a cookie
+   Use the Fetch API to make a `POST` request to `http://localhost:8080/authenticate` to receive a cookie
 
    - Add a page where a user can fill in an email and password
    - Add a new HTTP requests to the `useAPI` hook
@@ -46,12 +46,12 @@ Thank you for giving this test a try, I am open to hear your feedback on it. If 
 
    - Add a new HTTP requests to the `useAPI` hook
    - Add a `Route` and create a `NavLink` to it
-   - Use `useQuery` for keeping track of currently loaded page
+   - Use `useQuery` for keeping track of the currently loaded page
    - When the user arrives on this page:
      - Reset page to 0
      - Remove previously loaded data
      - Send the request
-   - Add a "More" button that makes another request with an increased page parameter
+   - Add a "More" button that loads in another page and __adds__ the transactions to the table
    - Use spread operator inside of the `addTransactions` Redux reducer
 
 3. **Display data**

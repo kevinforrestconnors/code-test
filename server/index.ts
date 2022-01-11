@@ -12,13 +12,15 @@ const TOKENS = [
   { id: getID(), name: '$MATIC' }
 ];
 
-async function getResult(url: string, cookies: Cookies, body?: Object): Promise<Object> {
+async function getResult(
+  url: string,
+  cookies: Cookies,
+  body?: { email?: string; password?: string }
+): Promise<Object> {
   const user = cookies.get('user', { signed: true });
 
   if (url.indexOf('/authenticate') === 0) {
-    const payload = { ...body } as { email?: string; password?: string };
-
-    if (!payload.email || !payload?.password) return null;
+    if (!body?.email || !body?.password) return null;
 
     const user = getID();
 
