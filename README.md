@@ -1,6 +1,6 @@
 # Digital Renaissance Code Test
 
-I'm Luuk, Chief Technical Officer at [Digital Renaissance](https://thedigitalrenaissance.io/team).
+I'm Luuk, Chief Technology Officer at [Digital Renaissance](https://thedigitalrenaissance.io/team).
 
 I wrote this test to get a sense of your:
 
@@ -51,7 +51,7 @@ Thank you for giving this test a try, I am open to hear your feedback on it. If 
      - Reset page to 0
      - Remove previously loaded data
      - Send the request
-   - Add a "More" button that loads in another page and __adds__ the transactions to the table
+   - Add a "More" button that loads in another page and **adds** the transactions to the table
    - Use spread operator inside of the `addTransactions` Redux reducer
 
 3. **Display data**
